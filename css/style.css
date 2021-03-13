@@ -66,4 +66,9 @@ body {
     opacity: 1;
   }
 }
+a{
+    color: white;
+    text-decoration: none;
+    font-size: 1vw;
+}
 /*# sourceMappingURL=style.css.map */

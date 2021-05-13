@@ -3,36 +3,63 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Harokis Kietas 3></title>
-    <link rel="stylesheet" href="css/style.css">
-    <script>
-window.onload = function() {
-  var context = new AudioContext();
-}
-</script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/tailwind.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+<style>
+    .header{
+        animation: fade-in 0.8s ease-in;
+    }
+    .sub{
+        animation: slide-in 1s ease-in;
+    }
+    .git{
+        animation: slide-bot 0.8s ease-in;
+    }
+    @keyframes fade-in {
+        from {
+            opacity: 0;
+        }
+        to {
+            opacity: 1;
+        }
+    }
+    @keyframes slide-in{
+        from{
+            opacity: 0;
+            transform: translate(100px, 0%);
+        }
+        to{
+            opacity: 1;
+            transform: translate(0px, 0%);
+        }
+    }
+    @keyframes slide-bot{
+        from{
+            opacity: 0;
+            transform: translate(0px, 100%);
+        }
+        to{
+            opacity: 1;
+            transform: translate(0px, 0%);
+        }
+    }
+</style>
 </head>
-<body>
-<div class="video-container">
-    <video controls id="myvideo" autoplay="autoplay" controls muted>
-        <source src="video_1.mp4"></source>
-    </video>
-    <iframe src="video_1.mp3" allow="autoplay" id="audio" style="display: none"></iframe>
-    <audio  <audio controls autoplay>>
-        <source src="video_1.mp3" type="audio/mpeg">
-    </audio>
-</div>
-    <script>
-        audioElement.play();
-        var elem = document.getElementById("myvideo");
-if (elem.requestFullscreen) {
-  elem.requestFullscreen();
-} else if (elem.mozRequestFullScreen) {
-  elem.mozRequestFullScreen();
-} else if (elem.webkitRequestFullscreen) {
-  elem.webkitRequestFullscreen();
-} else if (elem.msRequestFullscreen) { 
-  elem.msRequestFullscreen();
-}
-    </script>
+<body class="flex-1 h-screen w-screen font-roboto" style="background: url(bg.png);">
+    <div class="main flex space-y-2 flex-col flex-1 h-screen justify-center items-center">
+        <div class="header">
+            <h1 class="xl:text-7xl lg:text-4xl sm:text-3xl text-main font-bold">Hi, I'm Haroki</h1>
+        </div>
+        <div class="sub">
+            <h2 class="xl:text-5xl md:text-2xl sm:text-xl text-sec font-semibold">Junior Front-End developer</h2>
+        </div>
+        <div class="git">
+            <button class="text-white xl:text-2xl transform transition-all ease-in-out hover:scale-110 md:text-lg sm:text-sm"><a href="https://github.com/SilverGoLt"><span class="mr-2 text-main animate-pulse"><i class="fab fa-github"></i></span>GitHub</a></button>
+        </div>
+    </div>
 </body>
 </html>

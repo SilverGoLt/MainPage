@@ -1,65 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Haroki Main</title>
+    <title>Document</title>
     <link rel="stylesheet" href="css/tailwind.css">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
-<style>
-    .header{
-        animation: fade-in 0.8s ease-in;
-    }
-    .sub{
-        animation: slide-in 1s ease-in;
-    }
-    .git{
-        animation: slide-bot 0.8s ease-in;
-    }
-    @keyframes fade-in {
-        from {
-            opacity: 0;
-        }
-        to {
-            opacity: 1;
-        }
-    }
-    @keyframes slide-in{
-        from{
-            opacity: 0;
-            transform: translate(100px, 0%);
-        }
-        to{
-            opacity: 1;
-            transform: translate(0px, 0%);
-        }
-    }
-    @keyframes slide-bot{
-        from{
-            opacity: 0;
-            transform: translate(0px, 100%);
-        }
-        to{
-            opacity: 1;
-            transform: translate(0px, 0%);
-        }
-    }
-</style>
 </head>
-<body class="flex-1 h-screen w-screen font-roboto" style="background: url(bg.png);">
-    <div class="main flex space-y-2 flex-col flex-1 h-screen justify-center items-center">
-        <div class="header">
-            <h1 class="xl:text-7xl lg:text-4xl sm:text-3xl text-main font-bold">Hi, I'm Haroki</h1>
-        </div>
-        <div class="sub">
-            <h2 class="xl:text-5xl md:text-2xl sm:text-xl text-sec font-semibold">Junior Front-End developer</h2>
-        </div>
-        <div class="git">
-            <button class="text-white xl:text-2xl transform transition-all ease-in-out hover:scale-110 md:text-lg sm:text-sm"><a href="https://github.com/SilverGoLt"><span class="mr-2 text-main animate-pulse"><i class="fab fa-github"></i></span>GitHub</a></button>
-        </div>
+
+<body class="flex flex-col h-screen w-full" style="background: url(img/bg.png);">
+    <div
+        class="navigation flex relative top-3 text-sm space-x-5 xl:text-xl sm:text-base sm:space-x-3 2xl:space-x-10 xl:space-x-10 uppercase text-white justify-center items-center">
+        <img class="hidden sm:hidden 2xl:block xl:block" src="img/logo.png">
+        <a href="#" class="transform hover:text-gray-400 hover:scale-105 ease-in-out transition-all">pagrindinis</a>
+        <a href="#" class="transform hover:text-gray-400 hover:scale-105 ease-in-out transition-all">streameriai</a>
+        <a href="#" class="transform hover:text-gray-400 hover:scale-105 ease-in-out transition-all">taisykles</a>
+        <a href="#" class="transform hover:text-gray-400 hover:scale-105 ease-in-out transition-all">whitelist</a>
+    </div>
+    <div class="main text-white flex flex-col flex-1 justify-center items-center text-left">
+        <ul class="flex">
+            <li class="flex flex-col items-center sm:items-center md:items-center  2xl:items-start space-y-4 text-left">
+                <h1 class="text-5xl font-bold">Jigglis<span class="text-yellow-600">RP</span></h1>
+                <p class="text-base sm:text-xl w-1/2 sm:w-1/2 xl:w-4/12">
+                    Lietuviskas roleplay serveris fokusuojantis i roleplay kokybe ir savo serverio sistemas,
+                    serveris veikia
+                    whitelist principu. Zaidejai yra baudziami saziningai be antra sansu.</p>
+            </li>
+        </ul>
     </div>
 </body>
+
 </html>
